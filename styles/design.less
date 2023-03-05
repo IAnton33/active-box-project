@@ -1,0 +1,24 @@
+.section-design {
+
+  .wrapper-design {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
+    justify-items: center;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr)
+    }
+  }
+
+  .design-images {
+    max-width: 378px;
+    max-height: 340px;
+  }
+
+  .design-images:hover {
+    cursor: pointer;
+    opacity: 0.3;
+    background: url("/images/design/Rectangle.png");
+  }
+}
