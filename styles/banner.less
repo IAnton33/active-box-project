@@ -1,0 +1,93 @@
+.section-banner {
+
+  .wrapper-banner {
+    padding: 114px 0;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    justify-items: center;
+
+    @media screen and (max-width: 800px) {
+      padding: 114px 3px;
+      grid-template-columns: repeat(1, 1fr);
+      display: grid;
+      justify-items: center;
+
+    }
+    @media screen and (max-width: 320px) {
+      padding: 0 3px;
+      grid-template-columns: repeat(1, 1fr);
+      display: grid;
+      justify-items: center;
+    }
+  }
+
+  .banner-right {
+    background-image: url("/images/banner/violet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .banner-main-text {
+      font-family: 'Cardo', serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 49px;
+      color: @color-text;
+      margin: 116px 170px 5px 129px;
+
+      @media screen and (max-width: 1400px) {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        margin: 90px 150px 5px 100px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        margin: 70px 120px 5px 88px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 45px 104px 5px 88px;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 45px 80px 5px 88px;
+      }
+      @media screen and (max-width: 400px) {
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 30px 25px 5px 20px;
+      }
+    }
+  }
+
+  .simple-text {
+    max-width: 470px;
+    max-height: 230px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: @color-text;
+    padding-left: 129px;
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 88px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding: 3px 25px 95px 20px;
+    }
+  }
+}
+
