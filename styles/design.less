@@ -4,22 +4,140 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
+    .design__main {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      padding-top: 120px;
+      text-align: center;
+      color: @color-text;
 
+      @media screen and (max-width: 1024px) {
+        padding-top: 74px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      @media screen and (max-width: 320px) {
+        padding-top: 46px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+    }
+
+    .design__simple {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: @color-text;
+      padding-top: 55px;
+      padding-bottom: 128px;
+
+      @media screen and (max-width: 1024px) {
+        padding-top: 13px;
+        padding-bottom: 86px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      @media screen and (max-width: 320px) {
+        padding-bottom: 51px;
+        padding-top: 5px;
+      }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr)
+
+    }
 
     @media screen and (max-width: 900px) {
       grid-template-columns: repeat(2, 1fr)
     }
   }
 
-  .design-images img{
-    width: 100%;
-    height: 100%;
+  .design-images-one {
+    background: url("/images/design/work_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 
   }
 
-  .design-images:hover {
-    cursor: pointer;
-    opacity: 0.3;
-    background: url("/images/design/Rectangle.png");
+  .design-images-two {
+    background: url("/images/design/work_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
+
+  .design-images-three {
+    background: url("/images/design/work_3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .design-images-four {
+    background: url("/images/design/work_4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .design-images-five {
+    background: url("/images/design/work_5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .design-images-six {
+    background: url("/images/design/work_6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .design-images-seven {
+    background: url("/images/design/work_7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .design-images-eight {
+    background: url("/images/design/work_8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .card-design {
+    opacity: 0;
+  }
+
+  .card-design:hover {
+    opacity: 1;
+    border: 2px color(@color-text) solid;
+    background: rgba(255, 67, 67, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
 }
