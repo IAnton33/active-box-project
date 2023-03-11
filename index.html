@@ -16,9 +16,6 @@
                             <div class="logo">
                                 <img src="images/active/logo.png" alt="logo">
                             </div>
-                            <div class="burger">
-                                <img src="images/active/burger.png" alt="logo">
-                            </div>
                         </div>
                         <nav class="navigation">
                             <a href="#FEATURES">FEATURES</a>
@@ -26,8 +23,23 @@
                             <a href="#OUR TEAM">OUR TEAM</a>
                             <a href="#TESTIMONIALS">TESTIMONIALS</a>
                             <a href="#DOWNLOAD">DOWNLOAD</a>
+                            <div class="header__burger">
+                                <button onclick="onBurgerClick()" type="button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
                         </nav>
                     </div>
+                    <aside class="sidebar">
+                        <a href="#FEATURES">FEATURES</a>
+                        <a href="#WORKS">WORKS</a>
+                        <a href="#OUR TEAM">OUR TEAM</a>
+                        <a href="#TESTIMONIALS">TESTIMONIALS</a>
+                        <a href="#DOWNLOAD">DOWNLOAD</a>
+
+                    </aside>
                 </header>
                 <div class="line"></div>
                 <div class="body-active-box">
@@ -336,11 +348,11 @@
                 </div>
                 <div class="contact-social__networks">
                     <a href="https://facebook.com//" target="_blank"><img src="./images/team/facebook_icon.png"
-                                                                                alt="facebook"></a>
+                                                                          alt="facebook"></a>
                     <a href="https://twitter.com/" target="_blank"><img src="./images/team/twitter_icon.png"
                                                                         alt="twitter"></a>
                     <a href="https://linkedin.com/" target="_blank"><img src="./images/team/linkedin_icon.png"
-                                                                            alt="linkedin"></a>
+                                                                         alt="linkedin"></a>
                 </div>
             </div>
             <div class="footer-contact">
@@ -369,6 +381,6 @@
         </div>
     </div>
 </div>
-
+<script src="./burger.js"></script>
 </body>
 </html>

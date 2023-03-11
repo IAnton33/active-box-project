@@ -16,17 +16,13 @@
     @media screen and (max-width: 1024px) {
       padding: 0 20px;
     }
-
-    @media screen and (max-width: 320px) {
-      display: block;
-      }
   }
 
   .navigation a {
     padding: 40px 25px;
     color: @color-text;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -111,7 +107,6 @@
     @media screen and (max-width: 320px) {
       margin-top: 51px;
     }
-
   }
 
   .button-active-box {
@@ -120,7 +115,6 @@
     @media screen and (max-width: 320px) {
       padding-bottom: 52px;
     }
-
   }
 
   .button-active-box button {
@@ -163,23 +157,96 @@
     }
   }
 
-  .wrapper-logo {
-    @media screen and (max-width: 320px) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .header__burger button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+    border: none;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
   }
 
-  .burger {
-    @media screen and (max-width: 1920px) {
-      display: none;
-    }
-    @media screen and (max-width: 320px) {
+  .header__burger button:hover {
+    transform: scale(1.1);
+  }
+
+  .header__burger button span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+
+  .sidebar {
+    display: none;
+    position: absolute;
+    height: 543px;
+    left: 0;
+    background: #252B49;
+    opacity: 0.9;
+    transform: translateX(-100%);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .sidebar.sidebar_active {
+    transform: translateX(0);
+  }
+
+  .header__burger {
+    display: none;
+    width: 60px;
+    height: 26px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+
+    .header__burger {
       display: block;
     }
+
+    .sidebar {
+      display: block;
+      width: 60%;
+    }
+
+    .sidebar a{
+      padding: 40px 0 0 20px;
+      color: white;
+    }
+
+    .sidebar{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
   }
 
+  @media screen and (max-width: 320px) {
+    .header__burger {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+    .sidebar{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+
+    }
+    .sidebar a{
+      padding: 40px 0 0 20px;
+      color: white;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
 }
 
 
